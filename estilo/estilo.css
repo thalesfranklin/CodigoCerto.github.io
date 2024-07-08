@@ -15,6 +15,12 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 95px;
+}
 /* ESTILO CABEÇALHO */
 header{
     padding: 40px 4%;
@@ -36,4 +42,25 @@ header nav ul{
 header nav ul li{
     display: inline-block;
     padding: 0 40px;
+}
+/* ESTILO DO TOPO DA PAGINA */
+section .topo-do-site{
+    padding: 40px 4%;
+}
+.topo-do-site {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.topo-do-site .img-topo-site{
+    position: relative;
+    animation: deslizar 1s ease-in-out alternate;
+}
+@keyframes deslizar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top:30px
+    }
 }
