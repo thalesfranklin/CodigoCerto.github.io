@@ -1,0 +1,39 @@
+/* ESTILO GERAL */
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+body{
+    background-color: white;
+    height: 100vh;
+}
+.interface{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ESTILO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a {
+    color: #e53939;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
