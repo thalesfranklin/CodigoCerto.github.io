@@ -21,6 +21,21 @@ body{
     justify-content: center;
     gap: 95px;
 }
+.titulo{
+    color: white;
+    text-align: center;
+    font-size: 38px;
+    padding: 300px 0 0 0 ;
+}
+h1{
+    color: white;
+}
+h3{
+    color: #e53939;
+}
+.p{
+    color: white;
+}
 /* ESTILO CABEÇALHO */
 header{
     padding: 40px 4%;
@@ -51,15 +66,6 @@ section .topo-do-site{
     font-size: 30px;
     line-height: 40px;
 }
-h1{
-    color: white;
-}
-h3{
-    color: #e53939;
-}
-.p{
-    color: white;
-}
 .span1{
     color: black;
     background-color: yellow;
@@ -68,5 +74,29 @@ h3{
 .span2{
     color: yellow;
     background-color: black;
-    border-radius: 6% 0%;
+    border: inset yellow;
+    border-radius: 12% 12%;
+}
+/* ESTILO SOBRE MIM */
+.section .Curiosidades{
+    padding: 40px 4%;
+}
+.section .Curiosidades .flex{
+    gap: 60px;
+
+}
+.Curiosidades-box{
+    color: white;
+    padding: 40px;
+    border-radius: 30px;
+    border: 2px inset #e53939 ;
+    transition: 2s;
+}
+.Curiosidades-box :hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #e539398f;
+}
+.Curiosidades-box h3{
+    font-size: 26px;
+    margin: 15px 0 0 0 ;
 }
