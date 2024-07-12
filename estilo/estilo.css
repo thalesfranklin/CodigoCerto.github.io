@@ -83,7 +83,7 @@ section .topo-do-site{
     border: inset yellow;
     border-radius: 12% 12%;
 }
-/* ESTILO SOBRE MIM */
+/* ESTILO CURIOSIDADES */
 .section .Curiosidades{
     padding: 40px 4%;
 }
@@ -105,4 +105,29 @@ section .topo-do-site{
 .Curiosidades-box h3{
     font-size: 26px;
     margin: 15px 0 0 0 ;
+}
+/* ESTILO DO OBJETIVOS */
+section .objetivos{
+    padding: 40px 4%;
+}
+section .objetivos .flex{
+    align-items: center;
+    gap: 60px;
+}
+.objetivos .imgobjetivos{
+    display: flex;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 0px;
+    border: 2px inset #e5393996 ;
+}
+.objetivos .txtobjetivos{
+    color: white;
+}
+.objetivos .txtobjetivos span{
+    color: #e53939;
+}
+.objetivos .txtobjetivos p{
+    margin: 20px 0;
+    text-align: justify;
 }
