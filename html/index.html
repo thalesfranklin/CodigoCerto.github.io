@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
+
 <body>
     <header>
         <div class="interface">
@@ -21,30 +24,43 @@
                     <img src="/CodigoCerto/imagens/logocodigocerto.png" height="120px" width="120px" alt="">
                 </a>
             </div> <!--Logo-->
-            <nav class="menu-pc"> 
+            <nav class="menu-pc">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Curiosidades</a></li>
-                    <li><a href="#">Objetivos</a></li>
+                    <li><a href="#INICIO">Início</a></li>
+                    <li><a href="#CURIOSIDADES">Curiosidades</a></li>
+                    <li><a href="#OBJETIVOS">Objetivos</a></li>
                 </ul>
             </nav>
-             <div class="btn-dark"> 
-                <a href="#">
-                    <button>Dark mode</button>
-                </a>
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
             </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#INICIO">Início</a></li>
+                        <li><a href="#CURIOSIDADES">Curiosidades</a></li>
+                        <li><a href="#OBJETIVOS">Objetivos</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="INICIO">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1 class="h1">Thales Cristiano</h1>
                         <h3 class="h3">Desenvolvedor Front End</h3>
-                        <p class="p">Olá, sou apaixonado por desenvolvimento e tecnologia, adoro a arte de resolver problemas.
+                        <p class="p">Olá, sou apaixonado por desenvolvimento e tecnologia, adoro a arte de resolver
+                            problemas.
                             Gosto muito de aprender as últimas técnicas e tecnologias.
-                            Para resolver meus problemas, costumo usar a linguagem <span class="span1">Java</span><b><span class="span2">Script.</span></b></p>
+                            Para resolver meus problemas, costumo usar a linguagem <span
+                                class="span1">Java</span><b><span class="span2">Script.</span></b></p>
                     </div>
                     <div class="img-topo-site">
                         <img width="300px" height="200px" src="/CodigoCerto/imagens/fotosolo.JPG" alt="Thales">
@@ -52,7 +68,7 @@
                 </div>
             </div>
         </section>
-        <section class="Curiosidades">
+        <section class="Curiosidades" id="CURIOSIDADES">
             <div class="interface">
                 <h2 class="titulo">CURIOSIDADES</h2>
                 <div class="flex">
@@ -65,29 +81,39 @@
                     <div class="Curiosidades-box">
                         <img class="foto" src="/CodigoCerto/imagens/violãosmile.jpg" alt="Violao" width="220px">
                         <h3>MÚSICA</h3>
-                        <p>Toco e canto desde os 10 anos, trabalhei em uma das maiores lojas de instrumentos do nordeste. Sou multi-instrumentista.
+                        <p>Toco e canto desde os 10 anos, trabalhei em uma das maiores lojas de instrumentos do
+                            nordeste. Sou multi-instrumentista.
                         </p>
                     </div>
                     <div class="Curiosidades-box">
                         <img class="foto" src="/CodigoCerto/imagens/amigos.JPG" alt="friends" width="220px">
                         <h3>AMIGOS</h3>
-                        <p>Costumo fazer amizades por onde passo, gosto de estar sempre próximo dos "meus" e de estar rodeado de pessoas que me ajudam a ser uma pessoa melhor.
+                        <p>Costumo fazer amizades por onde passo, gosto de estar sempre próximo dos "meus" e de estar
+                            rodeado de pessoas que me ajudam a ser uma pessoa melhor.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="objetivos">
+        <section class="objetivos" id="OBJETIVOS">
             <div class="interface">
                 <div class="flex">
                     <div class="imgobjetivos">
-                        <img src="/CodigoCerto/imagens/vista-superior-do-hacker-irreconhecivel-realizando-ataque-cibernetico-a-noite.jpg" width="300px" alt="programador">
+                        <img src="/CodigoCerto/imagens/vista-superior-do-hacker-irreconhecivel-realizando-ataque-cibernetico-a-noite.jpg"
+                            width="300px" alt="programador">
                     </div>
                     <div class="txtobjetivos">
                         <h2>OBJETIVOS</h2>
-                        <p>Motivação para querer fazer parte do <span>Codigo Certo</span>: Quero me tornar um programador excelente, preciso e técnico. Busco ser uma referência e, no futuro, poder ajudar aqueles que virão. Acredito que este seja o lugar ideal para minhas ambições profissionais.</p><br>
+                        <p>Motivação para querer fazer parte do <span>Codigo Certo</span>: Quero me tornar um
+                            programador excelente, preciso e técnico. Busco ser uma referência e, no futuro, poder
+                            ajudar aqueles que virão. Acredito que este seja o lugar ideal para minhas ambições
+                            profissionais.</p><br>
                         <br>
-                        <p>Prentendo atuar como engenheiro de software, mas almejo chegar a gestor para não estar apenas envolvido com códigos, mas também com as negociações com líderes e clientes, atuando na parte estrutural. Minha maior meta é um dia poder trabalhar na empresa Spotify <img src="/CodigoCerto/imagens/spotify (1).png" alt="spotfy" width="18px" height="17px"> e conciliar meu hobby com a carreira que tanto amo.</p>
+                        <p>Prentendo atuar como engenheiro de software, mas almejo chegar a gestor para não estar apenas
+                            envolvido com códigos, mas também com as negociações com líderes e clientes, atuando na
+                            parte estrutural. Minha maior meta é um dia poder trabalhar na empresa Spotify <img
+                                src="/CodigoCerto/imagens/spotify (1).png" alt="spotfy" width="18px" height="17px"> e
+                            conciliar meu hobby com a carreira que tanto amo.</p>
                     </div>
                 </div>
             </div>
@@ -106,4 +132,5 @@
     </footer>
 </body>
 <script src="/CodigoCerto/script/script.js"></script>
+
 </html>
